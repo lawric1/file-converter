@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <script src="{% static 'app.js' %}"></script>
     <title>File converter</title>
 </head>
 <body>
@@ -21,13 +22,13 @@
     </header>
     <main>
         <div class="upload-file">
-            <input type="file" name="" id="">
+            <input type="file" name="file" id="file" multiple>
             <p>Drop files here</p>
         </div>
         
     </main>
     <section>
-        <ul>
+        <ul id="fileList">
             <li>a</li>
             <li>b</li>
             <li>c</li>
